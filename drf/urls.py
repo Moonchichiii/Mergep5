@@ -7,8 +7,8 @@ from .views import CurrentProfileView
 
 urlpatterns = [
     path('', root_route),
-    
-    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
+      
+
 
     path('admin/', admin.site.urls),
 
@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('likes.urls')),
     
     path('', include('followers.urls')),
+    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
 ]

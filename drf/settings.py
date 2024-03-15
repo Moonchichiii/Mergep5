@@ -192,7 +192,6 @@ STATICFILES_DIRS = [
 ]
 
 
-
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
